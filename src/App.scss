@@ -1,0 +1,31 @@
+$first: #0b9eff;
+$second: #1ca391;
+$third: #2b4b63;
+
+.app {
+  display: flex;
+  height: 100vh;
+
+  background: -moz-linear-gradient(307deg, $first 20%, $second 40%, $third 75%);
+  background: -webkit-linear-gradient(
+    307deg,
+    $first 20%,
+    $second 40%,
+    $third 75%
+  );
+  background: linear-gradient(307deg, $first 20%, $second 40%, $third 75%);
+  background-size: 350% 350%;
+  animation: waveColors 8s ease infinite;
+}
+
+@keyframes waveColors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,0 +1,84 @@
+.side-bar {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    height: auto;
+
+    &__card {
+        padding: 20px;
+        margin-top: 30px;
+        background: #ffffff;
+        border-radius: 6px;
+        border: 2px solid white;
+        max-width: 600px;
+        margin: 25px auto;
+        height: fit-content;
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    &__description {
+        font-size: 16px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__label {
+        font-size: 18px;
+        margin-bottom: 5px;
+        font-weight: 700;
+    }
+
+    &__input {
+        height: 40px;
+        margin-bottom: 10px;
+        padding-left: 10px;
+        grid-row: 2;
+
+        &:last-of-type {
+            grid-row: 3;
+        }
+
+        &.error__input {
+            border: 2px solid crimson;
+            border-radius: 3px;
+        }
+    }
+
+    &__btn-submit {
+        height: 45px;
+        font-size: 18px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        width: 100%;
+        box-shadow: none;
+        cursor: pointer;
+        background-color: rgb(12, 117, 187);
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+            background-color: rgb(8, 105, 170);
+        }
+
+        &:disabled {
+            transition: all 0.4s ease-in-out;
+            opacity: 0.4;
+            cursor: unset;
+            width: 100%;
+        }
+    }
+}
+
+.error__message {
+    color: crimson;
+    font-size: 12px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
