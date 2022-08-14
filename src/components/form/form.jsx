@@ -48,7 +48,7 @@ const schemaValidation = yup.object().shape({
     }),
 });
 
-export const Forms = ({ addValues }) => {
+export const Form = ({ addValues }) => {
   const {
     register,
     handleSubmit,

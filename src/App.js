@@ -1,6 +1,6 @@
 import './App.scss';
 import { useState } from 'react';
-import { Forms } from './components/form/form';
+import { Form } from './components/form/form';
 
 function App() {
   const [formValues, setFormValues] = useState([]);
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="app">
-      <Forms addValues={addValues} />
+      <Form addValues={addValues} />
     </div>
   );
 }
